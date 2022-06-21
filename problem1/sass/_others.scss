@@ -1,0 +1,25 @@
+.right {
+  float: right;
+}
+
+.mt3 {
+  margin-top: 3px;
+}
+
+.btn {
+  margin-top: 5vh;
+  width: 10rem;
+  height: 4rem;
+  text-align: center;
+  border: 1px solid $blue;
+  border-radius: 10px;
+  color: $white;
+  background-color: $blue;
+  font-weight: bold;
+  font-size: 15px;
+  opacity: 1;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}

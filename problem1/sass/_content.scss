@@ -1,0 +1,124 @@
+.content {
+  &__bg {
+    background-image: url("/problem1/img/bg-masthead.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 120vh;
+    overflow: hidden;
+
+    .et {
+      display: flex;
+      flex-direction: column;
+      max-width: 800px;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      padding: 10vh 0;
+
+      p {
+        word-break: break-all;
+        text-align: center;
+        color: $white;
+      }
+
+      &.et-get {
+        span {
+          font-size: 10rem;
+          color: $black-blur;
+        }
+        p {
+          padding: 6vh 4vw;
+          font-size: 1.5rem;
+          background-color: $black-blur;
+          border-radius: 15px;
+        }
+      }
+      &.et-detail {
+        span {
+          font-size: 3rem;
+          color: $white;
+        }
+        p {
+          padding: 4vh 4vw;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  &__grid {
+    margin-top: 5vh;
+    .grid {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: auto;
+      max-width: 1024px;
+
+      &__image {
+        img {
+          width: 32rem;
+          height: 20rem;
+          object-fit: cover;
+        }
+      }
+      &__data {
+        padding: 7rem 2rem;
+        height: 22rem;
+        text-align: center;
+      }
+
+      &:nth-child(1) {
+        align-items: center;
+      }
+      &:nth-child(2),
+      &:nth-child(3) {
+        align-items: flex-start;
+
+        .grid__data {
+          background-color: $black;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .content {
+    &__bg {
+      .et {
+        &.et-get {
+          span {
+            font-size: 7rem;
+          }
+          p {
+            margin: 0 4rem;
+          }
+        }
+        &.et-detail {
+          span {
+            font-size: 2rem;
+          }
+          p {
+            padding: 4vh 15vw;
+          }
+        }
+      }
+    }
+    &__grid {
+      .grid {
+        flex-direction: column;
+
+        &__data {
+          margin: 0 7.3rem;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+          align-items: center;
+        }
+      }
+    }
+  }
+}

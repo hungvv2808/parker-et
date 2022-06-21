@@ -1,0 +1,73 @@
+.header {
+  .navbar {
+    border-bottom: 1px solid $grey-blur;
+    height: 50px;
+    ul {
+      list-style-type: none;
+      overflow: hidden;
+      background-color: $white;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      padding: 0 10vw;
+
+      li {
+        float: left;
+
+        &.logo {
+          font-weight: bold;
+          font-size: 20px;
+        }
+        &.icon {
+          display: none;
+        }
+
+        a {
+          display: block;
+          color: $black;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+
+          &:hover:not(.active) {
+            color: $red-orange;
+          }
+        }
+      }
+    }
+
+    .active {
+      color: $orange;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    .navbar {
+      ul {
+        .nav-menu {
+          &:not(.res) {
+            display: none;
+          }
+          &.res {
+            display: grid;
+            width: 100%;
+            li {
+              a {
+                text-align: left;
+              }
+            }
+          }
+        }
+        li {
+          &.icon {
+            display: block;
+            float: right;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

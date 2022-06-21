@@ -1,0 +1,63 @@
+.footer {
+  background-image: url("/problem1/img/bg-signup.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__ion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: $white;
+
+    ion-icon {
+      margin-top: 5rem;
+    }
+  }
+
+  &__sendme {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto;
+    margin-top: 0;
+
+    input {
+      width: 20rem;
+      height: 3.5rem;
+      padding: 10px;
+      margin: 1rem;
+      border-radius: 10px;
+      border: 1px solid $white;
+      outline: none;
+      font-size: 20px;
+      color: $black-blur;
+    }
+
+    .btn-custom {
+      margin: 0;
+      height: 3.5rem;
+    }
+  }
+
+  &__copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    color: white;
+  }
+}
