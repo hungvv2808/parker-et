@@ -87,7 +87,9 @@
 @media screen and (max-width: 800px) {
   .content {
     &__bg {
+      height: 150vh;
       .et {
+        max-width: 500px;
         &.et-get {
           span {
             font-size: 7rem;

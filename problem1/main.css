@@ -126,6 +126,12 @@
 }
 
 @media screen and (max-width: 800px) {
+  .content__bg {
+    height: 150vh;
+  }
+  .content__bg .et {
+    max-width: 500px;
+  }
   .content__bg .et.et-get span {
     font-size: 7rem;
   }
