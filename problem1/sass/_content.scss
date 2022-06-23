@@ -4,13 +4,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 120vh;
+    height: 150vh;
     overflow: hidden;
 
     .et {
       display: flex;
       flex-direction: column;
-      max-width: 800px;
+      max-width: 50%;
       align-items: center;
       justify-content: center;
       margin: auto;
@@ -53,7 +53,7 @@
       flex-direction: row;
       justify-content: center;
       margin: auto;
-      max-width: 1024px;
+      max-width: 50%;
 
       &__image {
         img {
@@ -84,18 +84,34 @@
   }
 }
 
+@media screen and (max-width: 1440px) {
+  .content {
+    &__bg {
+      height: 185vh;
+    }
+    &__grid {
+      .grid {
+        &__image {
+          img {
+            width: 22.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 800px) {
   .content {
     &__bg {
-      height: 150vh;
       .et {
-        max-width: 500px;
+        max-width: 80%;
         &.et-get {
           span {
             font-size: 7rem;
           }
           p {
-            margin: 0 4rem;
+            margin: 0;
           }
         }
         &.et-detail {
@@ -103,22 +119,60 @@
             font-size: 2rem;
           }
           p {
-            padding: 4vh 15vw;
+            padding: 1rem;
           }
         }
       }
     }
     &__grid {
       .grid {
+        width: 90vw;
         flex-direction: column;
 
+        &__image {
+          img {
+            width: 90vw;
+            border-radius: 15px;
+          }
+        }
+
         &__data {
-          margin: 0 7.3rem;
+          margin: 0;
+          width: 90vw;
+          padding: 9rem 2rem;
+          border-radius: 15px;
         }
 
         &:nth-child(2),
         &:nth-child(3) {
           align-items: center;
+          width: 90vw;
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content {
+    &__bg {
+      .et {
+        &.et-get {
+          span {
+            font-size: 5rem;
+          }
+          p {
+            font-size: 1rem;
+          }
+        }
+        &.et-detail {
+          span {
+            font-size: 2rem;
+          }
+          p {
+            padding: 0;
+          }
         }
       }
     }
